@@ -13,7 +13,15 @@ public class CustomObject {
     }
 
     //Behavior that changes an attribute
-    public void behavior(int number) {
+    public void changeAttribute2(int number) {
         attribute2 = number;
+    }
+
+    //Behavior that prints all attributes
+    public void printAttributes() {
+        System.out.println();
+        System.out.println("attribute1: " + attribute1);
+        System.out.println("attribute2: " + attribute2);
+        System.out.println("attribute3: " + attribute3);
     }
 }

@@ -13,8 +13,11 @@ public class Main {
         object3.attribute3 = 10;
 
         //Use object behaviors
-        object1.behavior(3);
-        object1.behavior(7);
-        object1.behavior(11);
+        object1.changeAttribute2(3);
+        object2.changeAttribute2(7);
+        object3.changeAttribute2(11);
+        object1.printAttributes();
+        object2.printAttributes();
+        object3.printAttributes();
     }
 }
