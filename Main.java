@@ -2,22 +2,23 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //Create 3 objects
-        CustomObject object1 = new CustomObject("1", 2, 3);
-        CustomObject object2 = new CustomObject("4", 5, 6);
-        CustomObject object3 = new CustomObject("7", 8, 9);
+        //Create 3 animal objects
+        Animal cat = new Animal("Cat", 4, "gray");
+        Animal dog = new Animal("Dog", 7, "brown");
+        Animal bird = new Animal("Bird", 3, "yellow");
         
-        //Change attributes
-        object1.attribute1 = "2";
-        object2.attribute2 = 6;
-        object3.attribute3 = 10;
+        //Change object attributes
+        cat.age = 5;
+        dog.age = 8;
+        bird.color = "blue";
 
         //Use object behaviors
-        object1.changeAttribute2(3);
-        object2.changeAttribute2(7);
-        object3.changeAttribute2(11);
-        object1.printAttributes();
-        object2.printAttributes();
-        object3.printAttributes();
+        cat.changeAge(2);
+        dog.changeAge(1);
+        bird.changeAge(3);
+
+        cat.printAttributes();
+        dog.printAttributes();
+        bird.printAttributes();
     }
 }
